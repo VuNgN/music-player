@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy nghe nhạc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/fontawesome-5.15.4/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <div class="player">
+            <div class="header-title">
+                <p>Now playing:</p>
+                <h3 class="header-song-name">Sting 57th & 9th</h3>
+            </div>
+            <div class="cd">
+                <div class="header-img" style="background-image: url('img/song2.jpg')">
+            </div>
+            </div>
+            <div class="header-controllers">
+                <div class="controller controller-sysc">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <div class="controller controller-back">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="controller controller-play">
+                    <i class="fas fa-play"></i>
+                    <!-- <i class="fas fa-pause"></i> -->
+                </div>
+                <div class="controller controller-next">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="controller controller-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <div class="volume">
+                <i class="volume__icon fas fa-volume-up"></i>
+                <input id="volume_progress" class="progress" type="range" value="50" step="1" min="0" max="100">
+            </div>
+            <audio src="" id="audio"></audio>
+        </div>
+    </div>
+    <div class="playlist">
+        <ul class="list-song">
+            
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
